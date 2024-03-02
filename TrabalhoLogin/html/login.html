@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/TrabalhoLogin/css/login.css">
+</head>
+
+<body>
+    <!--container p poder agrupar tudo-->
+    <div class="container">
+
+        <!--quadrado de fundo-->
+        <div class="card">
+            <h1>LOGIN</h1>
+
+            <!--mostra msg de erro-->
+            <div id="msgError"></div>
+
+            <!--efeito para o label mover quando o usuario clica no input-->
+            <div class="label-float">
+                <input type="text" id="usuario" required />
+                <label id="userLabel" for="usuario">Usuário</label>
+            </div>
+
+            <!--efeito para o label mover quando o usuario clica no input-->
+            <div class="label-float">
+                <input type="password" id="senha" required />
+                <label id="senhaLabel" for="senha">Senha</label>
+                <!--tag <i> é usada p/ representar icones-->
+                <!--a classe "fa fa-eye" é específico da biblioteca do bootstrap -->
+                <i class="fa fa-eye" aria-hidden="true"></i>
+            </div>
+
+            <!--iria add uma nova pg p redefinir senha-->
+            <a class="estiloSenha" href="#">
+                Esqueci minha senha
+            </a>
+
+            <!--criei uma classe so p botar o botao no meio do meu card-->
+            <div class="justify-center">
+
+                <!--puxei a funcao do js de efetuar login-->
+                <button onclick="entrar()">Entrar</button>
+            </div>
+
+            <!--espaçamento-->
+            <br>
+
+            <!--paragrafo e link p se cadastrarF-->
+            <p>
+                Não possui uma conta?
+                <a class="estiloCadastre" href="/TrabalhoLogin/html/cadastro.html">
+                    Cadastre-se
+                </a>
+            </p>
+        </div>
+    </div>
+
+    <script src="/TrabalhoLogin/js/login.js"></script>
+</body>
+
+</html>

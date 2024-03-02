@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <!--link bootstrap do olhinho -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="/TrabalhoLogin/css/cadastro.css">
+</head>
+
+<body>
+  <!--container p poder agrupar tudo-->
+  <div class="container">
+
+    <!--quadrado de fundo-->
+    <div class="card">
+      <h1>CADASTRAR-SE</h1>
+
+      <!--mostra msg de erro e sucesso-->
+      <div id="msgError"></div>
+      <div id="msgSuccess"></div>
+
+      <!--efeito para o label mover quando o usuario clica no input-->
+      <div class="label-float">
+        <input type="text" id="email" placeholder=" " required />
+        <label id="labelEmail" for="email">Email</label>
+      </div>
+
+      <!--efeito para o label mover quando o usuario clica no input-->
+      <div class="label-float">
+        <input type="text" id="usuario" placeholder=" " required />
+        <label id="labelUsuario" for="usuario">Usuário</label>
+      </div>
+
+      <!--efeito para o label mover quando o usuario clica no input-->
+      <div class="label-float">
+        <input type="password" id="senha" required />
+        <label id="labelSenha" for="senha">Senha</label>
+        <!--tag <i> é usada p/ representar icones-->
+        <!--a classe "fa fa-eye" é específico da biblioteca do bootstrap -->
+        <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
+      </div>
+
+      <!--efeito para o label mover quando o usuario clica no input-->
+      <div class="label-float">
+        <input type="password" id="confirmSenha" required />
+        <label id="labelConfirmSenha" for="confirmSenha">Confirmar Senha</label>
+
+        <!--tag <i> é usada p/ representar icones-->
+        <!--a classe "fa fa-eye" é específico da biblioteca do bootstrap -->
+        <i id="verConfirmSenha" class="fa fa-eye" aria-hidden="true"></i>
+      </div>
+
+      <!--criei uma classe so p botar o botao no meio do meu card-->
+      <div class="justify-center">
+
+        <!--puxei a funcao do js de efetuar cadastro-->
+        <button onclick="cadastrar()">Cadastrar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/TrabalhoLogin/js/cadastro.js"></script>
+</body>
+
+</html>

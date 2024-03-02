@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-image: radial-gradient(rgb(60, 1, 94), rgb(172, 87, 189));
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 250px;
+}
+
+.card {
+    background: rgba(0, 0, 0, 0.644);
+    padding: 30px;
+    border-radius: 4%;
+    box-shadow: 3px 3px 1px 0px #00000060;
+    width: 400px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffffd5;
+}
+
+.label-float input {
+    color: #fff;
+    width: 100%;
+    padding: 5px;
+    display: inline-block;
+    border: 0;
+    background-color: transparent;
+    border-bottom: 2px solid #d8d8d848;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all .3s ease-out;
+    border-radius: 0;
+}
+
+.label-float {
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.label-float input:focus {
+    border-bottom: 2px solid rgb(0, 140, 255);
+    font-size: 12px;
+}
+
+.label-float label {
+    color: #ffffffaf;
+    position: absolute;
+    top: 0;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+}
+
+.label-float input:focus+label,
+.label-float input:valid+label {
+    font-size: 13px;
+    margin-top: 0;
+    color: rgb(0, 140, 255);
+}
+
+button {
+    background-color: rgba(115, 95, 153, 0.699);
+    border-color: #272262;
+    color: #ffffffe1;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: all .4s ease-out;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #272262;
+    color: #ffffffb0;
+}
+
+.justify-center {
+    display: flex;
+    justify-content: center;
+}
+
+hr {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 60%;
+}
+
+p {
+    color: #fff;
+    font-size: 14pt;
+    text-align: center;
+}
+
+.estiloCadastre {
+    color: #a898bd;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all .3s ease-out;
+}
+
+.estiloSenha {
+    color: #a898bd81;
+    font-size: 13px;
+}
+
+a:hover {
+    color: rgb(0, 140, 255);
+}
+
+.fa-eye {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    cursor: pointer;
+    color: #d8d8d848;
+}
+
+#msgError {
+    text-align: center;
+    color: #ff0000;
+    background-color: #ffbbbb;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}
+
+.modal-card {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .5);
+    backdrop-filter: blur(2px);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    background-color: #a898bd;
+    width: 300px;
+    height: 150px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 1px 0px #00000070;
+    position: relative;
+    text-align: center;
+    color: rgb(109, 67, 91);
+}
+
+
+@keyframes modal {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.mostrar .modal {
+        animation: modal 0.4s;
+    }
+
+
+#modal_card {
+    display: none;
+}
+
+.fechar {
+    position: absolute;
+    font-size: 25px;
+    top: -15px;
+    right: 5px;
+    width: 50px;
+    height: 50px;
+    color: rgb(36, 75, 182);
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.ok {
+    width: 50%;
+    padding: 50;
+    margin-top: 0px;
+    box-shadow: 3px 3px 1px 0px #00000070;
+    background-color: rgba(115, 95, 153, 0.699);
+}
+
+h2 {
+    align-items: center;
+    font-weight: 600;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.rostinho {
+    font-size: 50px;
+    color: #340b44;
+    align-items: center;
+}

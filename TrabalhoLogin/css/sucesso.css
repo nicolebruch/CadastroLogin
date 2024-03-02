@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-image: radial-gradient(rgb(60, 1, 94), rgb(172, 87, 189));
+
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+
+    margin-top: 250px;
+    background-color: #a898bd;
+    width: 300px;
+    height: 150px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 1px 0px #00000070;
+    position: relative;
+    text-align: center;
+}
+
+.sair {
+    width: 30%;
+    padding: 15px;
+    margin-top: 30px;
+    box-shadow: 3px 3px 1px 0px #00000070;
+    background-color: rgba(115, 95, 153, 0.699);
+}
+
+p {
+    margin-top: 10px;
+    align-items: center;
+    font-weight: bold;
+    font-size: 22px;
+    color: #0f0f0f;
+}
